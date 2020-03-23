@@ -1,0 +1,69 @@
+@mixin hamburger-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: $light;
+}
+
+@mixin regular-title {
+  text-transform: uppercase;
+  color: $light;
+  font-size: 1.5rem;
+  font-family: $header-content;
+}
+
+@mixin content {
+  font-family: $special-content;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+@mixin little-content {
+  font-family: $special-content;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+@mixin little-title {
+  font-family: $header-content;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: $special-color;
+  margin-bottom: 0.8rem;
+}
+
+
+@mixin responsive($brakepoint) {
+  @if $brakepoint==sm {
+    @media only screen and (min-width: 400px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $brakepoint==md {
+    @media only screen and (min-width: 600px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $brakepoint==lg {
+    @media only screen and (min-width: 800px) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $brakepoint==xl {
+    @media only screen and (min-width: 1200px) {
+      @content
+    }
+
+    ;
+  }
+
+}
