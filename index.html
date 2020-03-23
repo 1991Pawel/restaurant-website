@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="restaurant, quick food" />
+    <!-- Font Awsome -->
+    <script src="https://use.fontawesome.com/422078583c.js"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900|Roboto:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- IE 9 support -->
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv-printshiv.min.js"></script>
+    <title>Restaurant Website</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation">
+        <h1 class="navigation__logo">
+          <img
+            class="navigation__image"
+            src="./image/logo.png"
+            alt="website-logo"
+          />
+        </h1>
+        <button class="hamburger" type="button" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">about us</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#promotions">special offers</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#gallery">gallery</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contact">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__heading gap">
+          <h1 class="hero__title">only quality and fresh food</h1>
+          <div class="hero__nav" role="navigation">
+            <a class="hero__link links" href="#menu">
+              our menu
+              <span class="fa fa-long-arrow-right arrow-link"> </span>
+            </a>
+            <a class="hero__link hero__link--dark links" href="#about">
+              about us
+              <span class="fa fa-long-arrow-right arrow-link"> </span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="./image/hero-image.jpeg" alt="our burger" />
+        </div>
+        <div class="hero__content gap">
+          <p class="hero__desc">
+            Beyond Burger and the Impossible Burger remain the top contenders in
+            the meatless meat market, so we broke down all the need-to-know
+            details.
+          </p>
+          <div class="hero__icons">
+            <a href="#" aria-label="twitter">
+              <span class="fa fa-twitter hero__icon"></span>
+            </a>
+            <a href="#" aria-label="facebook">
+              <span class="fa fa-facebook hero__icon"></span>
+            </a>
+            <a href="#" aria-label="instagram">
+              <span class="fa fa-instagram hero__icon"> </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about gap">
+        <div class="about__heading">
+          <h2 class="about__title">
+            about us
+          </h2>
+          <h3 class="about__subtitle">
+            traditional and quality built since 1991
+          </h3>
+        </div>
+
+        <article class="article">
+          <p class="article__content">
+            Our story is a family owned and operated and bla bla lorem ipsum or
+            lorem?.
+          </p>
+          <p class="article__content">
+            Our story is a family owned and operated and bla bla lorem ipsum or
+            lorem?.
+          </p>
+          <p class="article__content">
+            Our story is a family owned and operated and bla bla lorem ipsum or
+            lorem?.
+          </p>
+          <p class="article__content">
+            Our story is a family owned and operated and bla bla lorem ipsum or
+            lorem?.
+          </p>
+          <p class="article__content">
+            Our story is a family owned and operated and bla bla lorem ipsum or
+            lorem?.
+          </p>
+        </article>
+        <div class="info">
+          <div class="info__item">
+            <h4 class="info__title">24h</h4>
+            <p class="info__content">
+              every day, suplieres suport us fresh products
+            </p>
+          </div>
+          <div class="info__item">
+            <h4 class="info__title">98KG</h4>
+            <p class="info__content">
+              every day, suplieres suport us fresh products
+            </p>
+          </div>
+          <div class="info__item">
+            <h4 class="info__title">3</h4>
+            <p class="info__content">
+              every day, suplieres suport us fresh products
+            </p>
+          </div>
+          <div class="info__item">
+            <h4 class="info__title">162</h4>
+            <p class="info__content">
+              every day, suplieres suport us fresh products
+            </p>
+          </div>
+        </div>
+        <div class="about__image">
+          <img
+            class="about__img"
+            src="./image/aboutburger.jpg"
+            alt="our hamburger"
+          />
+        </div>
+      </section>
+
+      <section id="menu" class="menu gap">
+        <div class="menu__heading">
+          <h2 class="menu__title">our menu</h2>
+          <h3 class="menu__subtitle">
+            what would you like to eat
+          </h3>
+        </div>
+
+        <a
+          href="./files/menu.pdf"
+          class="menu__link links"
+          download="menu"
+          aria-label="download menu.pdf"
+        >
+          menu pdf
+          <span class="fa fa-long-arrow-right arrow-link"> </span>
+        </a>
+
+        <div class="tabs">
+          <div role="navigation" aria-label="menu" class="tabs__links">
+            <a
+              class="tabs__link tabs__link--active"
+              data-for-tab="1"
+              aria-hidden="true"
+            >
+              <img
+                class="tabs__icon"
+                src="./image/burger-icon.png"
+                alt="brakefast-icon"
+              />
+              <p class="tabs__desc">breakfast</p>
+            </a>
+            <a class="tabs__link" data-for-tab="2" aria-hidden="true">
+              <img
+                class="tabs__icon"
+                src="./image/soup-icon.png"
+                alt="soup-icon"
+              />
+              <p class="tabs__desc">soup</p>
+            </a>
+            <a class="tabs__link" data-for-tab="3" aria-hidden="true">
+              <img
+                class="tabs__icon"
+                src="./image/burger-icon.png"
+                alt="burgers-icon"
+              />
+              <p class="tabs__desc">burgers</p>
+            </a>
+            <a class="tabs__link" data-for-tab="4" aria-hidden="true">
+              <img
+                class="tabs__icon"
+                src="./image/drinks.icon.png"
+                alt="drinks-icon"
+              />
+              <p class="tabs__desc">drinks</p>
+            </a>
+          </div>
+
+          <div class="tabs__content tabs__content--active" data-tab="1">
+            <div class="food-menu">
+              <h2 class="food-menu__title">beakfast</h2>
+              <ul class="food-menu__list">
+                <li class="food-menu__item">
+                  <span class="food-menu__name">omlette</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">scrambled eggs with bacon</span>
+                  <span class="food-menu__price">7$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">scrambled eggs with bacon</span>
+                  <span class="food-menu__price">7$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">tosts</span>
+                  <span class="food-menu__price">8$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">chease</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tabs__content" data-tab="2">
+            <div class="food-menu">
+              <h2 class="food-menu__title">soup</h2>
+              <ul class="food-menu__list">
+                <li class="food-menu__item">
+                  <span class="food-menu__name">chicken soup</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">tomato soup</span>
+                  <span class="food-menu__price">3$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">random soup</span>
+                  <span class="food-menu__price">7$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tabs__content" data-tab="3">
+            <div class="food-menu">
+              <h2 class="food-menu__title">burgers</h2>
+              <ul class="food-menu__list">
+                <li class="food-menu__item">
+                  <span class="food-menu__name">beef bruger</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quis, sint. erve a medley of
+                    fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">chicken burger</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    Lorem ipsum dolor sit amet.lor fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">chease burger</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">random burger</span>
+                  <span class="food-menu__price">5$</span>
+                  <span class="food-menu__desc">
+                    onions, green pher vegetables serve a medley of fresh fruit
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs__content" data-tab="4">
+            <div class="food-menu">
+              <h2 class="food-menu__title">drinks</h2>
+              <ul class="food-menu__list">
+                <li class="food-menu__item">
+                  <span class="food-menu__name">beer</span>
+                  <span class="food-menu__price">2$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">coffe</span>
+                  <span class="food-menu__price">3$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">tea</span>
+                  <span class="food-menu__price">8$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+                <li class="food-menu__item">
+                  <span class="food-menu__name">vodka</span>
+                  <span class="food-menu__price">10$</span>
+                  <span class="food-menu__desc">
+                    onions, green peppers, and other vegetables serve a medley
+                    of fresh fruit
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="promotions" class="promotions gap">
+        <div class="promotions__heading">
+          <h2 class="promotions__title">special offers</h2>
+          <h3 class="promotions__subtitle">
+            don't miss the best promotions!
+          </h3>
+        </div>
+        <div class="promo">
+          <div class="promo__image">
+            <img
+              class="promo__img"
+              src="./image/coupon-icon.png"
+              alt="coupon-icon"
+            />
+          </div>
+          <h4 class="promo__title">every day</h4>
+          <p class="promo__desc">
+            50% discount for all orders in the last hour of opening the
+            resttaurant
+          </p>
+          <button
+            class="promo__link links links--dark"
+            data-modal-target="#modal"
+          >
+            read more
+            <span class="fa fa-long-arrow-right arrow-link"> </span>
+          </button>
+          <div class="modal" id="modal">
+            <div class="modal__header">How to get discount?</div>
+            <button class="modal__close-btn" data-modal-close>&times;</button>
+            <div class="modal__body">
+              <p>
+                you need blablbal
+              </p>
+              <p>
+                Lorem ictetur adipisicing elit. Eius, exercitationem. dasdasdasd
+                dasdsad
+              </p>
+              <p>
+                Lorem ictetursicing elit. Eius, exercitationem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="promo">
+          <div class="promo__image">
+            <img
+              class="promo__img"
+              src="./image/form-icon.png"
+              alt="promo-icon"
+            />
+          </div>
+          <h4 class="promo__title">loyality program</h4>
+          <p class="promo__desc">
+            join the loyality program and get up to 25% discount on every order
+          </p>
+          <a class="promo__link links links--dark">
+            sing in
+            <span class="fa fa-long-arrow-right arrow-link"> </span>
+          </a>
+        </div>
+      </section>
+      <section class="testimonial gap">
+        <div class="carousel">
+          <div class="carousel__track-countainer">
+            <ul class="carousel__track">
+              <li class="carousel__slide">
+                <cite class="carousel__title">Tomasz Lis</cite>
+                <span class="carousel__location">Polska, Warszawa</span>
+                <img
+                  class="carousel__img"
+                  src="./image/face-icon.jpg"
+                  alt="our customer face"
+                />
+                <blockquote class="carousel__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus, reprehenderitolor sit amet consectetur adipisicing
+                  elit. Ducimus, reprehenderit.
+                </blockquote>
+              </li>
+              <li class="carousel__slide carousel__slide--active">
+                <cite class="carousel__title">Bartek Kot</cite>
+                <span class="carousel__location">Polska, Warszawa</span>
+                <img
+                  class="carousel__img"
+                  src="./image/face2-icon.jpg"
+                  alt="our customer face"
+                />
+                <blockquote class="carousel__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus, reprehenderitolor sit amet consectetur adipisicing
+                  elit. Ducimus, reprehenderit.
+                </blockquote>
+              </li>
+              <li class="carousel__slide">
+                <cite class="carousel__title">Ania Borsuk</cite>
+                <span class="carousel__location">Polska, Bydgoszcz</span>
+                <img
+                  class="carousel__img"
+                  src="./image/face3-icon.jpg"
+                  alt="our customer face"
+                />
+                <blockquote class="carousel__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus, reprehenderitolor sit amet consectetur adipisicing
+                  elit. Ducimus, reprehenderit.
+                </blockquote>
+              </li>
+            </ul>
+          </div>
+          <button
+            value="next"
+            aria-label="next"
+            class="carousel__button carousel__button--right"
+          >
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+          </button>
+          <button
+            value="prev"
+            aria-label="previous"
+            class="carousel__button carousel__button--left"
+          >
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+      <section id="gallery" class="gallery gap">
+        <div class="gallery__container">
+          <img
+            class="gallery__img "
+            src="./image/gallery-img-1.jpg"
+            alt="our special burgers"
+          />
+          <img
+            class="gallery__img"
+            src="./image/gallery-img-2.jpg"
+            alt="eggs"
+          />
+          <img
+            class="gallery__img "
+            src="./image/gallery-img-3.jpg "
+            alt="grilled chicke"
+          />
+          <img
+            class="gallery__img"
+            src="./image/gallery-img-4.jpg"
+            alt="grill corn"
+          />
+          <img
+            class="gallery__img"
+            src="./image/gallery-img-2.jpg"
+            alt="eggs"
+          />
+          <img
+            class="gallery__img "
+            src="./image/gallery-img-5.jpg"
+            alt="burger with onion rings"
+          />
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="contact gap">
+      <ul class="contact__list">
+        <li class="contact__item contact__item--big">
+          <h4 class="contact__heading">book a table</h4>
+          <p class="contact__desc contact__desc--big">+22-123456666</p>
+          <p class="contact__desc">+22-123456666</p>
+        </li>
+        <li class="contact__item">
+          <h4 class="contact__heading">our adres</h4>
+          <p class="contact__desc">15-644 Warszawa</p>
+          <p class="contact__desc">Grochowska 15/2</p>
+        </li>
+        <li class="contact__item">
+          <h4 class="contact__heading">opening hours</h4>
+          <p class="contact__desc contact__desc--big">monday - saturday</p>
+          <p class="contact__desc">10:00am - 10:00 pm</p>
+          <p class="contact__desc contact__desc--big">Sunday</p>
+          <p class="contact__desc">12:00 am - 10:00pm</p>
+        </li>
+      </ul>
+    </footer>
+    <span class="overlay" id="overlay"></span>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
